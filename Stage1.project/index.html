@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://blburgen.github.io/falcon.jpg">
+    <title>Brady's Notes</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid navbar-expand-md ">
+      <nav class="navbar navbar-nav d-flex justify-content-evenly" data-bs-theme="dark">
+        <ul class="navbar-nav col-md-2 col-12">
+            <li class="nav-item dropdown col-md text-center bg-primary border border-dark rounded-3">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><!--Create a dropdown button-->
+                    Week 02<br>&dArr; Project &dArr;
+                </a>
+                <ul class="dropdown-menu col-12">
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center active" href=".\">Home Page</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a class="text-center bg-primary nav-link col-md-2 col-12 border border-dark rounded-3" href="https://blburgen.github.io/">Home Page</a>
+        <a class="text-center bg-primary nav-link col-md-2 col-12 border border-dark rounded-3" href="https://blburgen.github.io/Projects/">Projects</a>
+        <ul class="navbar-nav col-md-3 col-12">
+            <li class="nav-item dropdown col-md text-center bg-primary border border-dark rounded-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><!--Create a dropdown button-->
+                    Udacity <br>&dArr; Projects  &dArr;
+                </a>
+                <ul class="dropdown-menu col-12">
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/UdacityProjects/">Udacity Projects Home</a></li>
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/Udacity01/">Udacity Week 01</a></li>
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center active" href="https://blburgen.github.io/Udacity02/">Udacity Week 02</a></li>
+                    <!-- <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/Udacity03/">Udacity Week 03</a></li>
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/Udacity07/">Udacity Week 07</a></li>
+                    <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/Udacity08/">Udacity Week 08</a></li>
+                    -->
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">   
+    <!--per comment from grader, i need to show that i understand classes.
+    From the graders words it has indicated to me that I need to add classes
+    to all the "div"s in my page to show that I understand classes.  The reason
+    that I originally left the some of the "div"s classless was that they
+    contained no special formatting.  To correct for this comment I will be adding
+    classes to different groups, so in the future they can be formatted through
+    the style page.  In the style page I will be leaving the classes empty.
+    I have also added notes to explain what is going on-->
+      <div class="tableOfContents"><!--"Table of Contents" block-->
+        <h1><!--I want the header of the "Table of Contents" left adjusted and
+        have the largest letters-->
+          Table of Contents
+        </h1><!--end of table of contents header-->
+        <ol><!--This section contains links to different sections of the page-->
+          <li><a href="#introduction"> Introduction </a></li>
+          <li><a href="#stage0"> Stage0: Getting Started with html </a></li>
+          <li><a href="#stage1"> Stage1: Make a Web Page </a></li>
+        </ol><!--End of list of links-->
+      </div><!--End of "Table of Contents" block-->
+      <div id="introduction"><!--linked from table of contents-->
+        <h2><!--I want the header of each section to have the second largest
+        letters and I want them to be center adjusted (3 sections)-->
+            Introduction
+        </h2><!--end of section header-->
+        <p><!--Introduction paragraph-->
+          This page contains my notes from Stage 0 and 1 from the Intro to
+          Programming Nanodegree.
+        </p><!--End of introduction paragraph-->
+      </div><!--End of "Introduction" block-->
+      <div id="stage0"><!--linked from table of contents-->
+        <h2><!--I want the header of each section to have the second largest
+        letters and I want them to be center adjusted (3 sections)-->
+            Stage 0: Getting Started with html
+        </h2><!--end of section header-->
+        <div class="regular"><!--Stage 0 first section of notes - HTML definition-->
+          HTML -HyperText Markup Language<br>
+          HTML is made up of:
+          <ul>
+            <li>text content (what you see)</li>
+            <li>markup (what it looks like)</li>
+            <li>references to other documents (e.g. images + videos)</li>
+            <li>links to other pages</li>
+          </ul>
+        </div>
+        <!--HTML markup-->
+        <div class="center"><!--Stage 0 second section of notes similar to forth
+        section of notes-->
+          <u>HTML Markup</u><br>
+          &lt;Name&gt; contents &lt;/name&gt;<br>
+          Opening tag------Closing Tag<br>
+          |-------------------------------|<br>
+          Element
+        </div>
+        <div class="grid"><!--Stage 0 third section of notes - contains multiple
+        "block" classes-->
+          <div class="block"><!--subsection of grid - contains multiple "supb" classes-->
+            <div class="supb"><!--subsection of block-->
+              &lt;b&gt; &lt;/b'&gt; for bolding<br>
+              <span class="indent"><!--indented formatting in supb-->
+                example (<b>bold</b>)<br>
+              </span>
+            </div><!--end class subp-->
+            <div class="supb"><!--subsection of block-->
+              &lt;em&gt; &lt;/em&gt; for emphasis (italics)<br>
+              <span class="indent"><!--indented formatting in supb-->
+                example (<em>emphasis</em>)
+              </span>
+            </div><!--end class subp-->
+          </div><!--end class block-->
+          <div class="block"><!--subsection of grid - contains multiple "supb" classes-->
+            <div class="supb"><!--subsection of block-->
+              &lt;br&gt; break  [void]  [inline]
+            </div><!--end class subp-->
+            <div class="supb"><!--subsection of block-->
+              &lt;p&gt; paragraph [block]<br>
+              &lt;p&gt; content &lt;/p&gt;
+              <p>
+                p tag is a block tag
+              </p>
+            </div><!--end class subp-->
+          </div><!--end class block-->
+        </div><br><!--end class grid-->
+        <!--HTML Attributes-->
+        <div class="center"><!--Stage 0 forth section of notes similar to second
+        section of notes-->
+          <u>HTML Attributes</u><br>
+          &lt;tag attr="value"&gt; contents &lt;/tag&gt;<br>
+          anchor - &lt;a&gt; - link<br>
+          &lt;a href="www.reddit.com"&gt;derp&lt;/a&gt;
+        </div><br>
+        <div class="regular"><!--Stage 0 fifth section of notes-->
+          <u>Images</u><br>
+          &lt;img&gt; - images
+          <ul>
+            <li>&lt;img src="url" alt="text"&gt; [void tag]</li>
+          </ul>
+          <img src="avatar.jpg" alt="avatar of author">
+        </div>
+        <div class="regular"><!--Stage 0 six section of notes-->
+          <!--Span/div-->
+          <u>Span/div</u><br>
+          &lt;span&gt; &lt;/span&gt; inline<br>
+          &lt;div&gt; &lt;/div&gt; block<br>
+          inline tags a, span, br, img, strong<br>
+          block tags div, p, form<br>
+        </div>
+      </div>
+      <div id="stage1"><!--linked from table of contents-->
+        <h2><!--I want the header of each section to have the second largest
+        letters and I want them to be center adjusted (3 sections)-->
+            Stage 1: Make a Web Page
+        </h2><!--end of section header-->
+        <div class="regular">
+          <u>Understanding CSS</u><br>
+          CSS stands for Cascading Style Sheets.  With CSS the most specific
+          rule is applied to every element.  Cascading means that you start
+          with the global laws and keep going down into the rules until you
+          find the one that best describes the elements.  CSS is code written
+          to control the "style" of HTML elements. To reference your
+          css file you put the reference in the header.  See the following
+          example of referencing a css file:
+          <!--pre maintains formatting as it is put into the file. i.e. spacing-->
+          <pre>
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="style.css"&gt;
+            &lt;/head&gt;
+
+            Example of CSS that makes all h1 elements have a black background
+            and white text
+
+            h1 {
+              background-color : black;
+              color: white;
+            }</pre>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+            CSS reference material
+          </a><br>
+          There are three was of including CSS styling in your page
+          <ul>
+            <li>Write CSS in the &lt;head&gt; of your HTML</li>
+            <li>Link your HTML to a separate CSS file</li>
+            <li>Write your style inline with your HTML</li>
+          </ul>
+          Why is style important
+          <ul>
+            <li>Write more efficient code</li>
+            <li>Understand code more efficiently</li>
+            <li>Communication in a common style</li>
+          </ul>
+          Increases productivity.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
